@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fdsportpulse.netlify.app/sitemap.xml
+Sitemap: https://tom61011.github.io/fdsportpulse/sitemap.xml
