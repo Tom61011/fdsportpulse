@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://tom61011.github.io/fdsportpulse/sitemap.xml
