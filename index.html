@@ -8,16 +8,16 @@
     <meta name="author" content="Fd Sport Pulse">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://tom61011.github.io/fdsportpulse/">
-    
+
     <!-- Geo Tags pour référencement local -->
     <meta name="geo.region" content="FR-59">
     <meta name="geo.placename" content="Nord, France">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Fd Sport Pulse">
@@ -25,38 +25,40 @@
     <meta property="og:title" content="Fd Sport Pulse - Votre partenaire fitness">
     <meta property="og:description" content="Transformez votre corps avec mes programmes personnalisés, cours collectifs et coaching professionnel.">
     <meta property="og:image" content="https://tom61011.github.io/fdsportpulse/assets/logo.png">
-    
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://tom61011.github.io/fdsportpulse/">
-    <meta property="twitter:title" content="Fd Sport Pulse - Votre partenaire fitness">
-    <meta property="twitter:description" content="Transformez votre corps avec mes programmes personnalisés.">
-    <meta property="twitter:image" content="https://tom61011.github.io/fdsportpulse/assets/logo.png">
-    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://tom61011.github.io/fdsportpulse/">
+    <meta name="twitter:title" content="Fd Sport Pulse - Votre partenaire fitness">
+    <meta name="twitter:description" content="Transformez votre corps avec mes programmes personnalisés.">
+    <meta name="twitter:image" content="https://tom61011.github.io/fdsportpulse/assets/logo.png">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/fdsportpulse/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/fdsportpulse/assets/favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/fdsportpulse/assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/fdsportpulse/assets/favicon/site.webmanifest">
-    
-    <title>Fd Sport Pulse - Coaching Fitness </title>
-    
-    <!-- Preload critical resources -->
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Schema.org LocalBusiness & Organization Structured Data -->
+
+    <title>Fd Sport Pulse - Coaching Fitness</title>
+
+    <!-- CSS -->
+    <link rel="preload" href="/fdsportpulse/css/style.css" as="style">
+    <link rel="stylesheet" href="/fdsportpulse/css/style.css">
+
+    <!-- Schema.org LocalBusiness Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "SportsActivityLocation", "HealthAndBeautyBusiness"],
+      "@type": "LocalBusiness",
+      "@id": "https://tom61011.github.io/fdsportpulse/#business",
       "name": "Fd Sport Pulse",
       "image": "https://tom61011.github.io/fdsportpulse/assets/logo.png",
+      "url": "https://tom61011.github.io/fdsportpulse/",
       "description": "Éducateur sportif diplômé proposant coaching personnalisé, cours collectifs et programmes fitness adaptés sur les zones CCHF et CUD.",
-      "@id": "https://tom61011.github.io/fdsportpulse",
-      "url": "https://tom61011.github.io/fdsportpulse",
       "telephone": "+33623773044",
-      "email": "fdsportpulse@gmail.com",
+      "email": "mailto:fdsportpulse@gmail.com",
+      "priceRange": "€€",
+      "openingHours": "Mo-Su 08:00-20:00",
       "address": {
         "@type": "PostalAddress",
         "addressRegion": "Nord",
@@ -64,29 +66,27 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "50.6292",
-        "longitude": "3.0573"
+        "latitude": 50.6292,
+        "longitude": 3.0573
       },
-      "areaServed": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": "50.6292",
-          "longitude": "3.0573"
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "CCHF"
         },
-        "geoRadius": "25000"
-      },
-      "priceRange": "€€",
-      "openingHours": "Mo-Su 08:00-20:00",
+        {
+          "@type": "AdministrativeArea",
+          "name": "CUD"
+        }
+      ],
       "founder": {
         "@type": "Person",
         "name": "Fabien Devroe",
-        "birthDate": "2005-05-18",
         "jobTitle": "Éducateur Sportif Diplômé BPJEPS APT",
         "description": "Éducateur sportif diplômé spécialisé dans les activités physiques pour tous. Dynamique, souriant et à l'écoute."
       },
       "sameAs": [
-        "https://tom61011.github.io/fdsportpulse"
+        "https://tom61011.github.io/fdsportpulse/"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -97,7 +97,7 @@
             "itemOffered": {
               "@type": "Service",
               "name": "Coaching Personnalisé",
-              "description": "Séances individuelles adaptées à vos objectifs et niveau"
+              "description": "Séances individuelles adaptées à vos objectifs et à votre niveau"
             }
           },
           {
@@ -126,95 +126,88 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="index.html" class="logo">
-                    <img src="assets/logo.png" alt="Fd Sport Pulse Logo">
+                <a href="/fdsportpulse/" class="logo" aria-label="Retour à l'accueil Fd Sport Pulse">
+                    <img src="/fdsportpulse/assets/logo.png" alt="Logo Fd Sport Pulse">
                     <span>Fd Sport Pulse</span>
                 </a>
-                <button class="menu-toggle" aria-label="Toggle menu">
+
+                <button class="menu-toggle" aria-label="Ouvrir ou fermer le menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
+
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="active">Accueil</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/fdsportpulse/" class="active" aria-current="page">Accueil</a></li>
+                    <li><a href="/fdsportpulse/services.html">Services</a></li>
+                    <li><a href="/fdsportpulse/contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Fd Sport Pulse - Votre Éducateur Sportif Diplômé</h1>
-                <p class="hero-subtitle">Des séances adaptées, sécurisées et accessibles à tous, avec le plaisir et le bien-être au centre</p>
-                <div class="hero-buttons">
-                    <a href="services.html" class="btn btn-primary">Découvrir mes services</a>
-                    <a href="contact.html" class="btn btn-secondary">Contactez-moi</a>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Fd Sport Pulse - Votre Éducateur Sportif Diplômé</h1>
+                    <p class="hero-subtitle">Des séances adaptées, sécurisées et accessibles à tous, avec le plaisir et le bien-être au centre</p>
+                    <div class="hero-buttons">
+                        <a href="/fdsportpulse/services.html" class="btn btn-primary">Découvrir mes services</a>
+                        <a href="/fdsportpulse/contact.html" class="btn btn-secondary">Contactez-moi</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">À Propos de Fabien Devroe</h2>
-            <div class="about-content" style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
-                    Je m'appelle <strong>Fabien Devroe</strong>, je suis né le 18/05/2005 et je suis <strong>éducateur sportif diplômé</strong>.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
-                    J'ai débuté mon parcours dans le domaine de l'animation en obtenant un BAC professionnel AEPA (Animation Enfance et Personnes Âgées), ce qui m'a permis d'acquérir une solide expérience auprès de publics variés.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
-                    Souhaitant m'orienter vers l'activité physique et le sport pour tous, j'ai poursuivi mes études avec un <strong>BPJEPS Activités Physiques pour Tous</strong>, diplôme que j'ai obtenu en septembre 2025.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
-                    Aujourd'hui, je continue à me former afin de devenir <strong>maître-nageur sauveteur</strong>, dans le but de vous proposer prochainement de nouveaux services aquatiques.
-                </p>
-                <p style="font-size: 1.2rem; line-height: 1.8; margin-top: 2rem; color: var(--primary-color); font-weight: 600;">
-                    Dynamique, souriant et à l'écoute, j'ai à cœur de proposer des séances adaptées, sécurisées et accessibles à tous, en mettant le plaisir et le bien-être au centre de ma pratique.
-                </p>
+        <!-- About Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">À propos de Fabien Devroe</h2>
+                <div class="about-content" style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Je m'appelle <strong>Fabien Devroe</strong> et je suis <strong>éducateur sportif diplômé</strong>.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        J'ai débuté mon parcours dans le domaine de l'animation en obtenant un BAC professionnel AEPA (Animation Enfance et Personnes Âgées), ce qui m'a permis d'acquérir une solide expérience auprès de publics variés.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Souhaitant m'orienter vers l'activité physique et le sport pour tous, j'ai poursuivi mes études avec un <strong>BPJEPS Activités Physiques pour Tous</strong>, diplôme obtenu en septembre 2025.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Aujourd'hui, je continue à me former afin de devenir <strong>maître-nageur sauveteur</strong>, dans le but de proposer prochainement de nouveaux services aquatiques.
+                    </p>
+                    <p style="font-size: 1.2rem; line-height: 1.8; margin-top: 2rem; color: var(--primary-color); font-weight: 600;">
+                        Dynamique, souriant et à l'écoute, j'ai à cœur de proposer des séances adaptées, sécurisées et accessibles à tous, en mettant le plaisir et le bien-être au centre de ma pratique.
+                    </p>
+                </div>
             </div>
-            
-            
-        </div>
-    </section>
+        </section>
 
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="container">
-            <h2 class="section-title">Ma Zone d'Intervention</h2>
-            <p style="text-align: center; margin-bottom: 2rem; color: var(--gray); font-size: 1.3rem; font-weight: 500;">
-                Je propose mes services sur l'ensemble des 57 communes de la CCHF et de la CUD
-            </p>
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/d/u/0/embed?mid=1HJEdDkZzLywfEE868OSUQoVuGj1IYY4&ehbc=2E312F&noprof=1" 
-                    width="100%" 
-                    height="500" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title="Zone d'activité complète CCHF et CUD">
-                </iframe>
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">Ma zone d'intervention</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: var(--gray); font-size: 1.3rem; font-weight: 500;">
+                    Je propose mes services sur l'ensemble des 57 communes de la CCHF et de la CUD.
+                </p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/d/u/0/embed?mid=1HJEdDkZzLywfEE868OSUQoVuGj1IYY4&ehbc=2E312F&noprof=1"
+                        width="100%"
+                        height="500"
+                        style="border:0;"
+                        allowfullscreen
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Zone d'activité complète CCHF et CUD">
+                    </iframe>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <!-- <section class="cta">
-        <div class="container">
-            <h2>Prêt à Commencer Votre Transformation ?</h2>
-            <p>Rejoignez notre communauté et bénéficiez d'une séance d'essai gratuite</p>
-            <a href="contact.html" class="btn btn-primary">Réserver ma séance gratuite</a>
-        </div>
-    </section> -->
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -222,35 +215,38 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="assets/logo.png" alt="Fd Sport Pulse">
+                        <img src="/fdsportpulse/assets/logo.png" alt="Fd Sport Pulse">
                         <span>Fd Sport Pulse</span>
                     </div>
-                    <p>Votre partenaire fitness pour une vie plus saine et plus active</p>
+                    <p>Votre partenaire fitness pour une vie plus saine et plus active.</p>
                 </div>
+
                 <div class="footer-section">
                     <h4>Navigation</h4>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="/fdsportpulse/">Accueil</a></li>
+                        <li><a href="/fdsportpulse/services.html">Services</a></li>
+                        <li><a href="/fdsportpulse/contact.html">Contact</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <ul>
-                        <li>📧 fdsportpulse@gmail.com</li>
-                        <li>📞 06 23 77 30 44</li>
+                        <li>📧 <a href="mailto:fdsportpulse@gmail.com">fdsportpulse@gmail.com</a></li>
+                        <li>📞 <a href="tel:+33623773044">06 23 77 30 44</a></li>
                         <li>📍 Zone : CCHF / CUD</li>
                     </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Fd Sport Pulse. Tous droits réservés.</p>
-                <p><a href="mentions-legales.html">Mentions légales</a></p>
+                <p><a href="/fdsportpulse/mentions-legales.html">Mentions légales</a></p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="/fdsportpulse/js/script.js"></script>
 </body>
 </html>
